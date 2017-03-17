@@ -1,0 +1,39 @@
+html, body {
+  font-family: Acrom-Regular, sans-serif;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+main {
+  flex: 1;
+  margin-top: 70px;
+}
+
+header, footer {
+  background: #303030;
+  color: #ffffff;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+section {
+  max-width: 1420px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+footer {
+}
+
+img {
+  max-width: 100%;
+}

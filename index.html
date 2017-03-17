@@ -10,14 +10,35 @@
     <link rel="stylesheet" href="./static/dist/styles.css">
 </head>
 <body>
-<header></header>
+<header>
+    <section class="menu-section">
+        <a class="logo" href="/">
+            <img src="./static/img/logo.svg" alt="">
+        </a>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Why</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">How to get started</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+        <button class="mobile-menu" onclick="$('.menu').slideToggle('slow')">
+            <img src="./static/img/icons/icon-menu.svg" alt="">
+        </button>
+    </section>
+</header>
 <main>
     <section></section>
     <section></section>
     <section></section>
     <section></section>
 </main>
-<footer></footer>
+<footer>
+</footer>
+<script src="./static/dist/libraries-min.js"></script>
 <script src="./static/dist/scripts-min.js"></script>
 </body>
 </html>
