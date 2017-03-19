@@ -1,0 +1,125 @@
+.main--bg {
+  max-height: 80vh;
+  height: 100%;
+  max-width: 1920px;
+  padding: 0;
+  position: relative;
+  background: #1B71D5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .title {
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    font-size: 40px;
+    margin-bottom: 65px;
+    font-family: Museo-Bold, sans-serif;
+  }
+  .description {
+    color: #ffffff;
+    font-family: Museo-Regular, sans-serif;
+    text-align: center;
+    font-size: 21px;
+    max-width: 768px;
+    font-weight: 500;
+    p {
+      margin-bottom: 35px;
+    }
+  }
+}
+
+.info--why {
+  .title {
+    font-family: Museo-Bold, sans-serif;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 60px;
+  }
+  .description {
+    font-size: 26px;
+    font-family: Museo, sans-serif;
+    text-align: center;
+    margin: 26px 0 45px;
+  }
+  .why-content {
+    max-width: 796px;
+    margin: auto;
+    .why-item {
+      font-size: 19px;
+      float: left;
+      max-width: 590px;
+      clear: both;
+      margin-bottom: 72px;
+      padding: 22px 20px 16px 50px;
+      position: relative;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+      &:before {
+        color: #e4f0ff;
+        font-size: 36px;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        font-family: Museo-Light, sans-serif;
+      }
+      &:nth-of-type(odd) {
+        float: right;
+      }
+      &:nth-of-type(1) {
+        &:before {
+          content: '1.';
+        }
+      }
+      &:nth-of-type(2) {
+        &:before {
+          content: '2.';
+        }
+      }
+      &:nth-of-type(3) {
+        &:before {
+          content: '3.';
+        }
+      }
+      &:nth-of-type(4) {
+        &:before {
+          content: '4.';
+        }
+      }
+    }
+  }
+}
+
+.info--services {
+  background: #F9FCFF;
+  max-width: 1920px;
+  clear: both;
+  .service-content{
+    padding-top: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1160px;
+  }
+  .service-icon{
+    flex: 1;
+  }
+  .service-information{
+    flex: 1;
+  }
+  .title {
+    font-family: Museo-Bold, sans-serif;
+    font-size: 36px;
+    margin-top: 25px;
+  }
+  .description{
+    font-size: 19px;
+    margin-bottom: 60px;
+    p{
+      line-height: 1.6;
+      margin-bottom: 35px;
+    }
+  }
+}

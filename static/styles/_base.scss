@@ -1,5 +1,5 @@
 html, body {
-  font-family: Acrom-Regular, sans-serif;
+  font-family: Museo-Regular, sans-serif;
   font-size: 14px;
   display: flex;
   flex-direction: column;
@@ -7,13 +7,16 @@ html, body {
 }
 
 main {
-  flex: 1;
   margin-top: 70px;
+  flex: 1;
+  @media screen and (max-width: 1200px) {
+    margin-top: 56px;
+  }
 }
 
 header, footer {
-  background: #303030;
-  color: #ffffff;
+  background: #fff;
+  z-index: 9;
 }
 
 header {
@@ -21,19 +24,27 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  box-shadow: 0 1px 10px 0 rgba(0,0,0,0.25);
 }
 
 section {
-  max-width: 1420px;
+  max-width: 1160px;
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
 }
 
-footer {
-}
-
 img {
   max-width: 100%;
+}
+
+.button{
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+  background: #257FE6;
+  padding: 18px 0;
+  border-radius: 10px;
+  text-decoration: none;
 }

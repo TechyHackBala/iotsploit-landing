@@ -5,6 +5,8 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+  z-index: 8;
+  max-width: 1920px;
 }
 .logo{
   height:30px;
@@ -21,9 +23,11 @@
     padding-left: 0;
     li{
       a{
-        color: #fff;
+        color: #252525;
         text-decoration: none;
+        text-transform: uppercase;
         transition: all .5s;
+        font-family: Museo, sans-serif;
         &:hover{
           transition: all .5s;
           color: #FF3471;
