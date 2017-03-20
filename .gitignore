@@ -2,3 +2,4 @@
 /node_modules/
 /static/dist/scripts.js
 .idea/
+/static/dist/libraries.js

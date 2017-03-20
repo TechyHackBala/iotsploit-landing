@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 551 551" style="enable-background:new 0 0 551 551;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#32FC8D;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+	.st1{fill:#0BE370;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+	.st2{fill:#14C767;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+	.st3{fill:#00AB6C;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+</style>
+<g>
+	<path class="st0" d="M462.7,442.4l-121.2-58.3L340.6,120c0-6.2,6.4-10.2,12-7.6l114.9,55.3c2.9,1.4,4.7,4.3,4.7,7.5v261.2
+		C472.2,441.3,467.1,444.5,462.7,442.4z"/>
+	<path class="st1" d="M341.5,384.1L210.3,321l126.3-207.9c2.2-3.7,6.9-5.1,10.8-3.2l116.5,56c4.5,2.1,6.1,7.7,3.5,11.9L341.5,384.1z
+		"/>
+	<path class="st2" d="M341.5,384.1L210.3,321L90.1,125.2c-3.4-5.5,2.5-11.9,8.2-9.1l112,53.9L341.5,384.1z"/>
+	<path class="st3" d="M200.9,442.4l-118.4-57c-2.3-1.1-3.8-3.4-3.8-6V116.8c0-4.7,4.9-7.8,9.2-5.8l122.5,58.9v266.5
+		C210.4,441.3,205.3,444.5,200.9,442.4z"/>
+</g>
+</svg>
