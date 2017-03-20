@@ -1,0 +1,7 @@
+.git
+.gitignore
+gulpfile.js
+package.json
+README.md
+Jenkinsfile
+Dockerfile
