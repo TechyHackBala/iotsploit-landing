@@ -4,7 +4,8 @@
   max-width: 100%;
   padding: 0;
   position: relative;
-  background: #1B71D5;
+  background: #1A2029 url("./../../static/img/icons/lowpoly.svg") no-repeat center;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,8 +19,16 @@
     text-align: center;
     font-weight: 900;
     font-size: 40px;
-    margin-bottom: 65px;
+    margin-bottom: 30px;
+    line-height: 2;
     font-family: Museo-Bold, sans-serif;
+    i{
+      color: #1a202a;
+      background: #fff;
+      font-style: normal;
+      padding: 4px 10px 3px;
+      border-radius: 4px;
+    }
     @media screen and (max-width: 768px) {
       font-size: 28px;
       margin-top: 20px;
@@ -32,13 +41,17 @@
     text-align: center;
     font-size: 21px;
     max-width: 768px;
-    font-weight: 500;
     @media screen and (max-width: 768px) {
       padding: 0 15px;
       font-size: 19px;
     }
     p {
       margin-bottom: 35px;
+      margin-top: 0;
+    }
+    .information{
+      font-family: Museo, sans-serif;
+      color: #a7eaf2;
     }
   }
 }
