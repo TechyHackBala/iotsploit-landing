@@ -1,1 +1,1 @@
-$("#select").select2({placeholder:"Choose type",minimumResultsForSearch:1/0});
+$("#select").select2({placeholder:"Choose type",minimumResultsForSearch:1/0}),$('input[name="file"]').change(function(){var e=$(this).val();e=e.replace("C:\\fakepath\\",""),$("#file--name").html(e)});

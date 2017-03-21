@@ -22,7 +22,7 @@
     margin-bottom: 30px;
     line-height: 2;
     font-family: Museo-Bold, sans-serif;
-    i{
+    i {
       color: #1a202a;
       background: #fff;
       font-style: normal;
@@ -49,7 +49,7 @@
       margin-bottom: 35px;
       margin-top: 0;
     }
-    .information{
+    .information {
       font-family: Museo, sans-serif;
       color: #a7eaf2;
     }
@@ -235,6 +235,10 @@ form {
   fieldset {
     border: none;
     padding-left: 0;
+    font-size: 19px;
+  }
+  .form-title {
+    font-size: 19px;
   }
   textarea {
     padding: 15px 15px 17px 14px;
@@ -263,6 +267,9 @@ form {
   .select2-container--default .select2-selection--single .select2-selection__arrow b {
     border-color: #217ded transparent transparent;
   }
+  .select2-container--default .select2-selection--single {
+    border: 1px solid #D8E0E8;
+  }
   .select2-container .select2-selection--single {
     height: 46px;
   }
@@ -285,6 +292,48 @@ form {
     position: absolute;
     z-index: -1;
   }
+  .input-file {
+    display: flex;
+    align-items: center;
+    border: 1px solid #D8E0E8;
+    background: #F4F5F7;
+    border-radius: 3px;
+    font-size: 19px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    .file-field {
+      width: 100%;
+      flex: 3;
+      border-right: 1px solid #D8E0E8;
+      padding: 7px 0 10px 7px;
+      border-radius: 3px;
+      background: #fff;
+      color: #A9B1B7;
+      cursor: pointer;
+      line-height: 1.7;
+      max-height: 26px;
+      height: 100%;
+      overflow: hidden;
+    }
+    .file-field--button {
+      cursor: pointer;
+      text-align: center;
+      font-size: 16px;
+      background: #257FE6;
+      width: 100%;
+      height: 100%;
+      padding: 7px 0;
+      margin: 0 12px;
+      color: #fff;
+      flex: 1;
+      border-radius: 3px;
+      transition: all .5s;
+      &:hover {
+        transition: all .5s;
+        background: #1e52a5;
+      }
+    }
+  }
   button[type="submit"] {
     padding: 15px 0 13px;
     border: none;
@@ -293,5 +342,11 @@ form {
     color: #ffffff;
     font-family: Museo-Regular, sans-serif;
     border-radius: 3px;
+    transition: all .5s;
+    cursor: pointer;
+    &:hover {
+      transition: all .5s;
+      background: #1e52a5;
+    }
   }
 }
