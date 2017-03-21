@@ -11,7 +11,7 @@
 .logo{
   height:30px;
 }
-.menu{
+.menu, .footer-menu{
   max-width: 880px;
   width: 100%;
   display: block;
@@ -32,6 +32,24 @@
           transition: all .5s;
           color: #FF3471;
         }
+      }
+    }
+  }
+}
+.footer-menu{
+  max-width: 500px;
+  ul{
+    li{
+      a{
+        color: #ffffff;
+      }
+    }
+  }
+  @media screen and (max-width: 500px) {
+    ul{
+      flex-direction: column;
+      li{
+        padding: 15px 0;
       }
     }
   }

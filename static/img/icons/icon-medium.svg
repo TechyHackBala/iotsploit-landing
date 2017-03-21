@@ -1,19 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 551 551" style="enable-background:new 0 0 551 551;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#32FC8D;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
-	.st1{fill:#0BE370;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
-	.st2{fill:#14C767;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
-	.st3{fill:#00AB6C;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
-</style>
-<g>
-	<path class="st0" d="M462.7,442.4l-121.2-58.3L340.6,120c0-6.2,6.4-10.2,12-7.6l114.9,55.3c2.9,1.4,4.7,4.3,4.7,7.5v261.2
-		C472.2,441.3,467.1,444.5,462.7,442.4z"/>
-	<path class="st1" d="M341.5,384.1L210.3,321l126.3-207.9c2.2-3.7,6.9-5.1,10.8-3.2l116.5,56c4.5,2.1,6.1,7.7,3.5,11.9L341.5,384.1z
-		"/>
-	<path class="st2" d="M341.5,384.1L210.3,321L90.1,125.2c-3.4-5.5,2.5-11.9,8.2-9.1l112,53.9L341.5,384.1z"/>
-	<path class="st3" d="M200.9,442.4l-118.4-57c-2.3-1.1-3.8-3.4-3.8-6V116.8c0-4.7,4.9-7.8,9.2-5.8l122.5,58.9v266.5
-		C210.4,441.3,205.3,444.5,200.9,442.4z"/>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="icon-medium" class="cls-1" d="M814,1107.21a0.688,0.688,0,0,1-.658.79,1.018,1.018,0,0,1-.45-0.12l-6.228-3.06a1.3,1.3,0,0,1-.664-1.06v-15.03a0.545,0.545,0,0,1,.527-0.63,0.851,0.851,0,0,1,.359.09l0.218,0.11h0l6.863,3.38a0.043,0.043,0,0,1,.03.02v15.51Zm7.192-18.17,0.419-.66a0.832,0.832,0,0,1,.7-0.38,0.663,0.663,0,0,1,.2.03,0.485,0.485,0,0,1,.154.05l7.24,3.56h0l0.006,0.01a0.041,0.041,0,0,1,.009.01,0.08,0.08,0,0,1,.027.11l-7.209,11.54L822,1104.49l-4.777-9.1ZM815,1101v-7l5.275,9.64-4.616-2.27Zm15,6.21a0.662,0.662,0,0,1-.7.73,1.45,1.45,0,0,1-.627-0.16l-1.032-.51h0l-4.616-2.28L830,1093.83v13.38Z" transform="translate(-807 -1088)"/>
 </svg>
