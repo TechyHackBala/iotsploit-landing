@@ -50,7 +50,7 @@ gulp.task('scripts', function() {
 gulp.task('libraries', function() {
 		var scripts = [
 				staticFolder +'scripts/vendor/jquery-3.1.1.min.js',
-				staticFolder +'scripts/vendor/select2.full.min.js',
+				staticFolder +'scripts/vendor/select2.full.min.js'
 		];
 		return gulp.src(scripts)
 				.pipe(concat('libraries.js'))
