@@ -10,6 +10,19 @@
 }
 .logo{
   height:30px;
+  position: relative;
+  img{
+    height: 100%;
+  }
+  &:before{
+    content:' ';
+    position: absolute;
+    background: url("./../../static/img/lines.svg") repeat-x;
+    width: 20px;
+    height: 8px;
+    left: -20px;
+    top:1px;
+  }
 }
 .menu, .footer-menu{
   max-width: 880px;

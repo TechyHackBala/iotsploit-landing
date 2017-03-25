@@ -50,7 +50,12 @@ gulp.task('scripts', function() {
 gulp.task('libraries', function() {
 		var scripts = [
 				staticFolder +'scripts/vendor/jquery-3.1.1.min.js',
-				staticFolder +'scripts/vendor/select2.full.min.js'
+				staticFolder +'scripts/vendor/select2.full.min.js',
+				staticFolder +'scripts/vendor/ScrollMagic.min.js',
+				staticFolder +'scripts/vendor/TimelineMax.min.js',
+				staticFolder +'scripts/vendor/animation.gsap.min.js',
+				staticFolder +'scripts/vendor/jquery.ScrollMagic.min.js',
+				staticFolder +'scripts/vendor/debug.addIndicators.min.js'
 		];
 		return gulp.src(scripts)
 				.pipe(concat('libraries.js'))
