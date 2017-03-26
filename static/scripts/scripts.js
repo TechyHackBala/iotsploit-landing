@@ -26,6 +26,5 @@ var scene = new ScrollMagic.Scene({
 		triggerHook: "onEnter",
 		offset: 120
 })
-		.addIndicators()
 		.setTween(tween_projects)
 		.addTo(controller);
