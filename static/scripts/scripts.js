@@ -28,3 +28,37 @@ var scene = new ScrollMagic.Scene({
 })
 		.setTween(tween_projects)
 		.addTo(controller);
+
+
+var ctx = $("#myChart");
+
+var myChart = new Chart(ctx, {
+		type: 'line',
+		data: {
+				labels: ["21.03", "22.03", "23.03", "24.03", "25.03", "26.03"],
+				datasets: [{
+						label: '# of Votes',
+						data: [4, 1, 3, 5, 2, 3],
+						borderColor: [
+								'#2F86E7'
+						],
+						borderWidth: 1
+				}]
+		},
+		options: {
+				scales: {
+						yAxes: [{
+								ticks: {
+										beginAtZero:true
+								}
+						}]
+				}
+		}
+});
+
+// var myLineChart = new Chart(ctx, {
+// 		type: 'line',
+// 		data: data,
+// 		options: options
+// });
+

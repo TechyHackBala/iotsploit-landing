@@ -55,7 +55,7 @@ gulp.task('libraries', function() {
 				staticFolder +'scripts/vendor/TimelineMax.min.js',
 				staticFolder +'scripts/vendor/animation.gsap.min.js',
 				staticFolder +'scripts/vendor/jquery.ScrollMagic.min.js',
-				staticFolder +'scripts/vendor/debug.addIndicators.min.js'
+				staticFolder +'scripts/vendor/Chart.min.js'
 		];
 		return gulp.src(scripts)
 				.pipe(concat('libraries.js'))

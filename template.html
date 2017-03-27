@@ -30,7 +30,7 @@
         </button>
     </section>
 </header>
-<main  class="template">
+<main class="template">
     <section class="main--bg">
         <div class="title">
             Dahua backdoor check
@@ -38,23 +38,52 @@
     </section>
     <section class="check">
         <div class="check-form--wrap">
-            <div class="check-form--title">Dahua DVR RPC Vulnerability</div>
+            <div class="check-form--title">IOTSploit shares details of malicious remote hacks into Dahua video cameras
+            </div>
             <div class="check-form--description">
-                <div class="description--default">On 7 March 2017 an anonymous researcher Bashis published details of vulnerabilities discovered in Dahua manufactured video cameras (or CCTV cameras). According to
-                    <a href="#">Shodan</a>, there is an estimated <b>400,000 IP</b>  addresses that use Dahua equipment. The vulnerability allows an unauthorised user to gain admin privileges to Dahua kit. </div>
-                <div class="description--bord-text">Our Mission is to enable researchers eliminate vulnerabilities in their cameras and to equip them with tools and methods to update or disable affected devices.</div>
+                <div class="description--default">
+                    <p>On 7 March 2017 an anonymous researcher Bashis published on <a href="http://seclists.org"
+                                                                                      target="_blank">seclists.org</a>
+                        an account of security
+                        vulnerabilities discovered in some video cameras (and similar CCTV equipment) manufactured by
+                        Dahua.
+                    </p>
+                    <p>
+                        According to Shodan, an IOT search engine, there is an estimated <b>400,000 IP</b> addresses
+                        that
+                        currently use Dahua equipment worldwide.
+                    </p>
+                    <p>
+                        The discovered vulnerability allows an outside user to remotely hack into Dahua kit and gain
+                        control of admin privileges
+                    </p>
+                </div>
+                <div class="description--bord-text-wrap">
+                    <div class="description--bord-text">
+                        IOTsploit’s mission is to enable enterprises discover and eliminate vulnerabilities in their IOT
+                        devices such as connected cameras and to equip them with effective
+                        tools and methods to secure their software,
+                        sensors and networks.
+                    </div>
+                    <a href="#" class="description--bord-text--link">
+                        &#8594; Affected Dahua devices
+                    </a>
+                </div>
             </div>
         </div>
     </section>
     <section class="form">
-        <div class="title">Do it now</div>
+        <div class="title">Dahua DVR RPC Vulnerability</div>
         <form action="/">
             <input type="text" id="ip_address" placeholder="Enter Dahua camera IP">
             <button type="submit" class="ip-check--btn">Check</button>
         </form>
     </section>
     <section class="chart">
-        <div class="title">Dahua vulnerable camera statistics</div>
+        <div class="title">Daily log of Dahua devices affected by the
+            discovered vulnerability:
+        </div>
+        <canvas id="myChart" width="400" height="400" style="display: none"></canvas>
     </section>
 </main>
 <footer>
