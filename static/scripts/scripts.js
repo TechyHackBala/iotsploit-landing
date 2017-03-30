@@ -7,9 +7,9 @@ $('#select').select2({
 		minimumResultsForSearch: Infinity
 });
 
-$('input[name="file"]').change(function(){
+$('input[name="file"]').change(function () {
 		var fileName = $(this).val();
-		fileName = fileName.replace('C:\\fakepath\\','');
+		fileName = fileName.replace('C:\\fakepath\\', '');
 		$('#file--name').html(fileName);
 });
 
@@ -49,16 +49,51 @@ var myChart = new Chart(ctx, {
 				scales: {
 						yAxes: [{
 								ticks: {
-										beginAtZero:true
+										beginAtZero: true
 								}
 						}]
 				}
 		}
 });
 
-// var myLineChart = new Chart(ctx, {
-// 		type: 'line',
-// 		data: data,
-// 		options: options
-// });
+$('.ip-check--btn').click(function () {
+		setTimeout(function () {
+				checking(1);
+		}, 0);
+		setTimeout(function () {
+				checking(2);
+		}, 2000);
+		setTimeout(function () {
+				checking(3);
+		}, 5000);
 
+});
+
+function checking(checkState) {
+		switch (checkState) {
+				case  1: {
+						$('.ip-check--btn').fadeOut(function () {
+								$('#status--load').fadeIn(500, function () {
+										$('#dahua_form').addClass('status__change load');
+								});
+						});
+						break;
+				}
+				case  2: {
+						$('#status--load').fadeOut(function () {
+								$('#status--current').fadeIn(500);
+								$('#dahua_form').addClass('current');
+						});
+						break;
+				}
+				case  3: {
+						$('#status--current').fadeOut(function () {
+								$('#status--failed').fadeIn(500);
+								$('#dahua_form').addClass('failed');
+						});
+						break;
+				}
+				default:
+						break;
+		}
+}
