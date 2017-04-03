@@ -45,7 +45,8 @@
             <form action="/">
                 <textarea placeholder="IOT IP" name="ip_check-area" id="ip_check-area" cols="30" rows="4"></textarea>
                 <div class="samples">
-                    <button>Use my IP</button> or samples: <br>
+                    <button>Use my IP</button>
+                    or samples: <br>
                     64.222.177.180-190 <br>
                     176.126.167.1/24 <br>
                     38.88.237.230, 64.222.177.185
@@ -64,8 +65,10 @@
                             <span>Not Vulnerable</span>
                         </div>
                         <div class="report--links">
-                            <a class="view_report" href="#"> <img src="./static/img/icons/icon-eye.svg" alt=""> View report</a>
-                            <a class="new_scan" href="#"> <img src="./static/img/icons/icon-new_scan.svg" alt=""> Start new scan</a>
+                            <a class="view_report" href="#"> <img src="./static/img/icons/icon-eye.svg" alt=""> View
+                                report</a>
+                            <a class="new_scan" href="#"> <img src="./static/img/icons/icon-new_scan.svg" alt=""> Start
+                                new scan</a>
                         </div>
                     </div>
                     <div id="status--failed">
@@ -74,12 +77,90 @@
                             <span>Vulnerable</span>
                         </div>
                         <div class="report--links">
-                            <a class="new_scan" href="#"> <img src="./static/img/icons/icon-new_scan.svg" alt=""> Start new scan</a>
+                            <a class="new_scan" href="#"> <img src="./static/img/icons/icon-new_scan.svg" alt=""> Start
+                                new scan</a>
                         </div>
                     </div>
                 </div>
             </form>
         </div>
+    </section>
+    <section class="report">
+        <div class="report--title">Scan report</div>
+        <div class="table-title">Two column table</div>
+        <table class="check two-column">
+            <tr>
+                <th>IP</th>
+                <th>Open ports</th>
+            </tr>
+            <tr>
+                <td>78.195.117.3</td>
+                <td>8080</td>
+            </tr>
+            <tr>
+                <td>78.195.117.4</td>
+                <td>8181</td>
+            </tr>
+            <tr>
+                <td>78.195.117.4</td>
+                <td>8181</td>
+            </tr>
+        </table>
+        <div class="table-title">Three column table</div>
+        <table class="three-column uncheck">
+            <tr>
+                <th>IP</th>
+                <th>Password</th>
+                <th>Open ports</th>
+            </tr>
+            <tr>
+                <td>78.195.117.4</td>
+                <td>admin</td>
+                <td>8080</td>
+            </tr>
+            <tr>
+                <td>78.195.117.142</td>
+                <td>QWERTY123</td>
+                <td>81</td>
+            </tr>
+        </table>
+        <div class="table-title">Fifth column table</div>
+        <table class="fifth-column uncheck">
+            <tr>
+                <th>IP</th>
+                <th>Password</th>
+                <th>Open ports</th>
+                <th>Name</th>
+                <th>Links</th>
+            </tr>
+            <tr>
+                <td>78.195.117.4</td>
+                <td>admin</td>
+                <td>8080</td>
+                <td>admin</td>
+                <td>https://www.site.co/</td>
+            </tr>
+            <tr>
+                <td>78.195.117.142</td>
+                <td>QWERTY123</td>
+                <td>QWERTY123</td>
+                <td>user</td>
+                <td>https://www.site.co/</td>
+            </tr><tr>
+                <td>78.195.117.142</td>
+                <td>QWERTY123</td>
+                <td>QWERTY123</td>
+                <td>user123</td>
+                <td>https://www.site.co/</td>
+            </tr>
+            <tr>
+                <td>78.195.117.142</td>
+                <td>QWERTY123</td>
+                <td>QWERTY123</td>
+                <td>qwerty</td>
+                <td>https://www.site.co/</td>
+            </tr>
+        </table>
     </section>
 </main>
 <footer>

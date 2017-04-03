@@ -333,4 +333,46 @@
       }
     }
   }
+  .table-title{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-family: Museo, sans-serif;
+    font-size: 22px;
+  }
+  table{
+    width: 100%;
+    margin-bottom: 40px;
+    position: relative;
+    tr{
+      background: #fff;
+      &:nth-of-type(2n+1){
+        background: #fbfdff;
+      }
+    }
+  }
+  td, th{
+    text-align: left;
+    padding: 12px 0;
+    font-family: Museo, sans-serif;
+  }
+  th{
+    background: #fbfdff;
+    color: #9aa3ac;
+  }
+  .check{
+    &:before{
+      content: url(./../../static/img/icons/icon-check.svg);
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  }
+  .uncheck{
+    &:before{
+      content: url(./../../static/img/icons/icon-uncheck.svg);
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  }
 }
