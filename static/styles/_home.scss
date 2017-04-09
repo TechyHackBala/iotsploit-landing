@@ -229,7 +229,7 @@ form {
     &::-moz-placeholder {
       color: #9aa3ac;
     }
-    &[type='text'] {
+    &[type='text'], &[type='password'] {
       padding: 15px 15px 17px 14px;
       border: 1px solid #D8E0E8;
       border-radius: 2px;
