@@ -37,6 +37,9 @@
           transition: all .5s;
           color: #FF3471;
         }
+        &.active{
+          color: #FF3471;
+        }
       }
     }
   }
