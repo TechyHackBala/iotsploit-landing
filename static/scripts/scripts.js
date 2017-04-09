@@ -17,8 +17,7 @@ var controller = new ScrollMagic.Controller();
 // var tween_projects = TweenMax.to(".why-item", 6, {marginTop: 0, autoAlpha: 1, scale: 1});
 
 var tween_projects = new TimelineLite()
-		.add(TweenMax.to("#why-item--1, #why-item--2", 1, {marginTop: 0, autoAlpha: 1, scale: 1, duration: 0}))
-		.add(TweenMax.to("#why-item--3, #why-item--4", 1.5, {marginTop: 0, autoAlpha: 1, scale: 1, duration: 1}));
+		.add(TweenMax.to("#why-item--1, #why-item--2, #why-item--3, #why-item--4", 1.5, {marginTop: 0, autoAlpha: 1, scale: 1, duration: 0}));
 
 var scene = new ScrollMagic.Scene({
 		tweenChanges: true,
@@ -97,3 +96,14 @@ function checking(checkState) {
 						break;
 		}
 }
+
+function menuScrollNav() {
+		$('.menu li a').click(function(){
+				$('html, body').stop().animate({
+						scrollTop: $( $(this).attr('href') ).offset().top -100
+				}, 400);
+				return false;
+		});
+}
+menuScrollNav();
+
