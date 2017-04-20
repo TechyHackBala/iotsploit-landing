@@ -3,14 +3,17 @@
   h1{
     font-size: 2.2rem;
     font-family: Museo, sans-serif;
+    clear: both;
   }
   h2{
     font-size: 2rem;
     font-family: Museo, sans-serif;
+    clear: both;
   }
   h3{
     font-size: 1.5rem;
     font-family: Museo, sans-serif;
+    clear: both;
   }
   .author{
     color: #949494;
@@ -20,9 +23,58 @@
     border-bottom: 1px dotted;
     text-decoration: none;
     transition: all .5s;
+    clear: both;
     &:hover{
       color: #FF0000;
       transition: all .5s;
     }
+  }
+  b{
+    font-family: Museo, sans-serif;
+  }
+  p{
+    line-height: 1.5;
+  }
+  .date{
+    color: #9aa3ac;
+  }
+  ul, ol{
+    padding-left: 25px;
+    li{
+      line-height: 1.7;
+    }
+  }
+  img{
+    max-width: 100%;
+    display: block;
+    padding: 20px;
+    &.center{
+      margin: auto;
+    }
+    &.right{
+      float: right;
+      padding-right: 0;
+    }
+    &.left{
+      float: left;
+      padding-left: 0;
+    }
+  }
+  blockquote{
+    color: #333;
+    background: #EEEEEE;
+    margin: 0;
+    padding: 15px;
+  }
+  code{
+    pre{
+      background: #3C3F41;
+      padding: 20px;
+      color: #fff;
+      border-radius: 3px;
+    }
+  }
+  #disqus_thread{
+    margin: 25px 0;
   }
 }
