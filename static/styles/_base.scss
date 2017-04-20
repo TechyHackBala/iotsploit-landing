@@ -4,6 +4,9 @@ html, body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  @media screen and (max-width: 829px){
+    font-size: 12px;
+  }
 }
 
 main {

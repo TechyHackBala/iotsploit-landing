@@ -33,6 +33,7 @@
     font-family: Museo, sans-serif;
   }
   p{
+    font-size: 14px;
     line-height: 1.5;
   }
   .date{
@@ -48,6 +49,7 @@
     max-width: 100%;
     display: block;
     padding: 20px;
+    box-sizing: border-box;
     &.center{
       margin: auto;
     }
@@ -72,6 +74,9 @@
       padding: 20px;
       color: #fff;
       border-radius: 3px;
+      @media screen and (max-width: 829px) {
+        white-space: pre-wrap;
+      }
     }
   }
   #disqus_thread{
