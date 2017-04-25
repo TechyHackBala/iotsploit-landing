@@ -92,8 +92,9 @@ footer{
     max-width: 390px;
     height: 100px;
   }
-  @media screen and (max-width: 360px){
+  @media screen and (max-width: 370px){
     padding: 5px;
+    font-size: 20px;
     &.complite{
       @media screen and (max-width: 320px){
         height: 130px;
