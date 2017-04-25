@@ -87,6 +87,17 @@ footer{
     border-color: rgba(37, 127, 230, 0.55);
   }
   &.complite{
-
+    color: #252525;
+    border-color: #25c810;
+    max-width: 390px;
+    height: 100px;
+  }
+  @media screen and (max-width: 360px){
+    padding: 5px;
+    &.complite{
+      @media screen and (max-width: 320px){
+        height: 130px;
+      }
+    }
   }
 }
