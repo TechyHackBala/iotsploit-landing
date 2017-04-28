@@ -76,11 +76,6 @@
     }
   }
   .form {
-    background: #F5FAFF url("./../../static/img/icons/lowpoly-form.svg") no-repeat center;
-    background-size: cover;
-    max-width: 100%;
-    padding-bottom: 100px;
-    margin-bottom: 30px;
     .title {
       font-family: Museo, sans-serif;
       font-size: 26px;
@@ -88,158 +83,7 @@
       margin-bottom: 30px;
       text-align: center;
     }
-    form {
-      max-width: 768px;
-      margin: auto;
-      background: #fff;
-      .line--progress {
-        width: 100%;
-        background: transparent;
-        height: 2px;
-        margin-top: 19px;
-        display: flex;
-        .start--progress {
-          width: 25%;
-          height: 100%;
-        }
-        .all--progress {
-          z-index: 2;
-          height: 100%;
-          width: 100%;
-        }
-      }
-      .status {
-        margin: 0 auto 30px;
-        font-family: Museo, sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .status--wrap {
-          display: flex;
-          flex-direction: column;
-        }
-        #status--load {
-          display: none;
-          img {
-            animation-name: rotation;
-            animation-duration: 5s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-            margin-bottom: 10px;
-          }
-          span {
-            margin-top: 10px;
-            margin-left: 10px;
-            font-size: 22px;
-          }
-        }
-        #status--current {
-          display: none;
-          flex-direction: column;
-          span {
-            margin-top: 10px;
-            font-size: 22px;
-          }
-        }
-        #status--failed {
-          display: none;
-          flex-direction: column;
-          span {
-            margin-top: 10px;
-            font-size: 22px;
-          }
-        }
-      }
-      @keyframes rotation {
-        from {
-          transform: rotate(0deg);
-        }
-        to {
-          transform: rotate(360deg);
-        }
-      }
-      &.status__change {
-        .status {
-          visibility: visible;
-          #status--load {
-            display: none;
-          }
-          #status--current {
-            display: none;
-          }
-          #status--failed {
-            display: none;
-          }
-        }
-        .ip-check--btn {
-          display: none;
-        }
-      }
-      &.load {
-        .status {
-          #status--load {
-            display: flex;
-            transition: all .5s;
-          }
-        }
-        .line--progress {
-          width: 20%;
-          background: #257FE6;
-          animation: widthChange;
-          animation-duration: 2s;
-          animation-timing-function: linear;
-        }
-        @keyframes widthChange {
-          from {
-            width: 0;
-          }
-          to {
-            width: 20%;
-          }
-        }
-      }
-      &.current {
-        .status {
-          #status--current {
-            display: flex;
-          }
-        }
-        .line--progress {
-          background: #2DC724;
-          width: 100%;
-          animation: widthChangeCurrent .7s linear;
-          @keyframes widthChangeCurrent {
-            from {
-              opacity: 0;
-            }
-            to {
-              opacity: 1;
-            }
-          }
-        }
-      }
-      &.failed {
-        .status {
-          #status--failed {
-            transition: all .5s;
-            display: flex;
-          }
-        }
-        .line--progress {
-          background: #DA2343;
-          width: 100%;
-          animation: widthChangeCurrent .7s linear;
-          @keyframes widthChangeCurrent {
-            from {
-              opacity: 0;
-            }
-            to {
-              opacity: 1;
-            }
-          }
-        }
-      }
-    }
+
     #ip_address {
       padding: 13px 15px 15px 14px;
       background: rgba(255, 255, 255, .8);
@@ -256,6 +100,13 @@
       margin: auto auto 40px auto;
       background: #257BE9;
     }
+    &.dahua-wrap{
+      background: #F5FAFF url("./../../static/img/icons/lowpoly-form.svg") no-repeat center;
+      background-size: cover;
+      max-width: 100%;
+      padding-bottom: 100px;
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -267,26 +118,35 @@
     margin-bottom: 30px;
     text-align: center;
   }
+  .chart--graph {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: auto;
+    max-width: 960px;
+    padding-bottom: 60px;
+    @media screen and (max-width: 890px) {
+      font-size: 17px;
+      flex-direction: column;
+    }
+  }
 }
 
 .report {
   .report--form_wrap {
     max-width: 768px;
-    padding-top: 10px;
     margin: 0 auto 160px;
     box-shadow: 0 0 10px 0 rgba(38, 124, 234, 0.15);
-    form {
-      max-width: 100%;
-      padding: 18px 30px 46px;
-      textarea{
-        font-size: 16px;
-      }
+    textarea {
+      width: auto;
+      margin: 20px;
+      font-size: 16px;
     }
-    .samples{
-      margin-bottom: 30px;
+    .samples {
+      margin: 10px 20px 30px;
       line-height: 1.6;
-      button{
-        border:none;
+      button {
+        border: none;
         background: transparent;
         color: #217DED;
         cursor: pointer;
@@ -294,85 +154,268 @@
         margin: 0;
       }
     }
-    .line--progress{
+    .line--progress {
       width: 100%;
       background: #D9E9FB;
       height: 2px;
       display: flex;
+      margin-bottom: 20px;
     }
   }
   .report--btn {
     width: 280px;
     margin: auto;
   }
-  .status{
-    .status--wrap, .report--links{
+  .status {
+    .status--wrap, .report--links {
       display: flex;
       flex-direction: column;
       align-items: center;
-      span{
+      span {
         margin-top: 10px;
         font-size: 22px;
       }
     }
-    .report--links{
+    .report--links {
       flex-direction: row;
       justify-content: center;
-      a{
+      a {
         text-decoration: none;
         margin: 10px;
         display: flex;
         align-items: center;
         color: #000;
-        img{
+        img {
           margin-right: 5px;
         }
-        &.view_report{
+        &.view_report {
           color: #267CEA;
         }
       }
     }
   }
-  .table-title{
+  .table-title {
     margin-top: 10px;
     margin-bottom: 15px;
     font-family: Museo, sans-serif;
     font-size: 22px;
   }
-  table{
+  table {
     width: 100%;
     margin-bottom: 40px;
     position: relative;
-    tr{
+    tr {
       background: #fff;
-      &:nth-of-type(2n+1){
+      &:nth-of-type(2n+1) {
         background: #fbfdff;
       }
     }
   }
-  td, th{
+  td, th {
     text-align: left;
     padding: 12px 0;
     font-family: Museo, sans-serif;
   }
-  th{
+  th {
     background: #fbfdff;
     color: #9aa3ac;
   }
-  .check{
-    &:before{
+  .check {
+    &:before {
       content: url(./../../static/img/icons/icon-check.svg);
       position: absolute;
       top: 10px;
       right: 10px;
     }
   }
-  .uncheck{
-    &:before{
+  .uncheck {
+    &:before {
       content: url(./../../static/img/icons/icon-uncheck.svg);
       position: absolute;
       top: 10px;
       right: 10px;
+    }
+  }
+}
+
+#from--animation {
+  max-width: 768px;
+  margin: auto;
+  background: #fff;
+  .line--progress {
+    width: 100%;
+    //background: transparent;
+    height: 2px;
+    margin-top: 19px;
+    display: flex;
+    .start--progress {
+      width: 25%;
+      height: 100%;
+    }
+    .all--progress {
+      z-index: 2;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .status {
+    margin: 0 auto 30px;
+    font-family: Museo, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .status--wrap {
+      display: flex;
+      flex-direction: column;
+    }
+    #status--load {
+      display: none;
+      img {
+        animation-name: rotation;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        margin-bottom: 10px;
+      }
+      span {
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 22px;
+      }
+    }
+    #status--current {
+      display: none;
+      flex-direction: column;
+      span {
+        margin-top: 10px;
+        font-size: 22px;
+      }
+    }
+    #status--failed {
+      display: none;
+      flex-direction: column;
+      span {
+        margin-top: 10px;
+        font-size: 22px;
+      }
+    }
+    #status--error {
+      display: none;
+      flex-direction: column;
+      span {
+        margin-top: 10px;
+        font-size: 22px;
+      }
+    }
+  }
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  &.status__change {
+    .status {
+      visibility: visible;
+      #status--load {
+        display: none;
+      }
+      #status--current {
+        display: none;
+      }
+      #status--failed {
+        display: none;
+      }
+    }
+    .ip-check--btn {
+      display: none;
+    }
+  }
+  &.load {
+    .status {
+      #status--load {
+        display: flex;
+        transition: all .5s;
+      }
+    }
+    .line--progress {
+      width: 20%;
+      background: #257FE6;
+      animation: widthChange;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+    }
+    @keyframes widthChange {
+      from {
+        width: 0;
+      }
+      to {
+        width: 20%;
+      }
+    }
+  }
+  &.current {
+    .status {
+      #status--current {
+        display: flex;
+      }
+    }
+    .line--progress {
+      background: #2DC724;
+      width: 100%;
+      animation: widthChangeCurrent .7s linear;
+      @keyframes widthChangeCurrent {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  &.failed {
+    .status {
+      #status--failed {
+        transition: all .5s;
+        display: flex;
+      }
+    }
+    .line--progress {
+      background: #DA2343;
+      width: 100%;
+      animation: widthChangeCurrent .7s linear;
+      @keyframes widthChangeCurrent {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  &.error {
+    .status {
+      #status--failed {
+        transition: all .5s;
+        display: flex;
+      }
+    }
+    .line--progress {
+      background: #DA2343;
+      width: 100%;
+      animation: widthChangeCurrent .7s linear;
+      @keyframes widthChangeCurrent {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
     }
   }
 }

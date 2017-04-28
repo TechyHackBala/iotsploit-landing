@@ -14,10 +14,14 @@ $('input[name="file"]').change(function () {
 });
 
 var controller = new ScrollMagic.Controller();
-// var tween_projects = TweenMax.to(".why-item", 6, {marginTop: 0, autoAlpha: 1, scale: 1});
 
 var tween_projects = new TimelineLite()
-		.add(TweenMax.to("#why-item--1, #why-item--2, #why-item--3, #why-item--4", 1.5, {marginTop: 0, autoAlpha: 1, scale: 1, duration: 0}));
+		.add(TweenMax.to("#why-item--1, #why-item--2, #why-item--3, #why-item--4", 1.5, {
+				marginTop: 0,
+				autoAlpha: 1,
+				scale: 1,
+				duration: 0
+		}));
 
 var scene = new ScrollMagic.Scene({
 		tweenChanges: true,
@@ -64,7 +68,10 @@ $('.ip-check--btn').click(function () {
 		}, 2000);
 		setTimeout(function () {
 				checking(3);
-		}, 5000);
+		}, 4000);
+		setTimeout(function () {
+				checking(4);
+		}, 6000);
 
 });
 
@@ -73,7 +80,7 @@ function checking(checkState) {
 				case  1: {
 						$('.ip-check--btn').fadeOut(function () {
 								$('#status--load').fadeIn(500, function () {
-										$('#dahua_form').addClass('status__change load');
+										$('#from--animation').addClass('status__change load');
 								});
 						});
 						break;
@@ -81,14 +88,21 @@ function checking(checkState) {
 				case  2: {
 						$('#status--load').fadeOut(function () {
 								$('#status--current').fadeIn(500);
-								$('#dahua_form').addClass('current');
+								$('#from--animation').addClass('current');
 						});
 						break;
 				}
 				case  3: {
 						$('#status--current').fadeOut(function () {
 								$('#status--failed').fadeIn(500);
-								$('#dahua_form').addClass('failed');
+								$('#from--animation').addClass('failed');
+						});
+						break;
+				}
+				case  4: {
+						$('#status--failed').fadeOut(function () {
+								$('#status--error').fadeIn(500);
+								$('#from--animation').addClass('error');
 						});
 						break;
 				}
@@ -98,9 +112,9 @@ function checking(checkState) {
 }
 
 function menuScrollNav() {
-		$('.menu li a').click(function(){
+		$('.menu li a').click(function () {
 				$('html, body').stop().animate({
-						scrollTop: $( $(this).attr('href') ).offset().top -100
+						scrollTop: $($(this).attr('href')).offset().top - 100
 				}, 400);
 				return false;
 		});
